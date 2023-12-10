@@ -1,0 +1,25 @@
+/* RegistrationForm.css */
+
+.registration-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.registration-form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.registration-form input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.registration-form button {
+  width: 100%;
+  margin-top: 10px;
+}

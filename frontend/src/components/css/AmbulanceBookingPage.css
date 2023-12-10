@@ -1,0 +1,40 @@
+/* AmbulanceBookingPage.css */
+
+.ambulance-booking-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .ambulance-booking-container:hover{
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+
+  }
+  .ambulance-booking-container h1 {
+    font-size: 2em;
+  }
+  
+  .ambulance-booking-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .ambulance-booking-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .ambulance-booking-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ambulance-booking-container li {
+    margin-bottom: 10px;
+  }
+  
+  /* Add any additional styling as needed */
+  
