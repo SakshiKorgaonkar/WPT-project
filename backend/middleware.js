@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 const verifyToken = (req, res, next) => {
-  const authHeader = req.header("Authorization");
+  const authHeader = req.header("Authorization");//used to retrieve value of authorization header from incoming request
 
   if (!authHeader) {
     return res.status(401).json({ message: "Access denied. No token provided." });

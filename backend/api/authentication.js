@@ -8,7 +8,6 @@ require("dotenv").config();
 
 const router = express.Router();
 
-
 mongoose.connect(process.env.URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
