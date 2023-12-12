@@ -4,6 +4,8 @@ import { Container, Form, Button } from "react-bootstrap";
 import "./css/RegistrationForm.css";
 import {useNavigate} from "react-router-dom";
 import server from "../server";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 const RegistrationForm = () => {
   const navigate = useNavigate();
@@ -38,6 +40,9 @@ const RegistrationForm = () => {
     }
     if (!formData.phone) {
       newErrors.phone = "Mobile number is required";
+    }
+    if(formData.phone.replace(/\D/g,'').length===10){
+      newErrors.phone="Enter a valid phone number"
     }
     if (!formData.email) {
       newErrors.email = "Email is required";
@@ -128,6 +133,7 @@ const RegistrationForm = () => {
               type="tel"
               placeholder="Enter your mobile number"
               name="phone"
+              contextMenu="number"
               value={formData.phone}
               onChange={handleChange}
               isInvalid={!!errors.phone}

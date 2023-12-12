@@ -48,7 +48,7 @@ const AmbulanceBookingPage = ({ isAuthenticated }) => {
         <Container className="ambulance-booking-container" >
           <h1 style={{display:"flex",justifyContent:"center"}}>Emergency Ambulance Services</h1>
           <p style={{display:"flex",justifyContent:"center"}}>Your safety is our priority. Book an ambulance now.</p>
-          <br />
+          <hr />
           <Row className="mb-4">
             <Col md={6}>
               <h2 style={{color:"red"}}>Why Choose Us?</h2>
@@ -102,7 +102,7 @@ const AmbulanceBookingPage = ({ isAuthenticated }) => {
                 <Form.Group controlId="formContactNumber" className="mb-2">
                   <Form.Label>Contact Number</Form.Label>
                   <Form.Control
-                    type="tel"
+                    type="number"
                     placeholder="Enter your contact number"
                     value={contactNumber}
                     onChange={(e) => setContactNumber(e.target.value)}
